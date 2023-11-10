@@ -1,0 +1,15 @@
+{% extends 'principal/base.html' %}
+{% block content %}
+<body>
+
+    
+<h1>Recetario de Bebidas</h1>
+{% for elemento in lista %}
+<ul>
+<li><strong>{{elemento.name}}</strong></li>
+<li>{{elemento.address}}</li>
+<li>{{elemento.phone}}</li>
+</ul>
+{% endfor %}
+</body>
+{% endblock %}
